@@ -1,7 +1,18 @@
 name = input("Enter any words: ")
 count = 0
 for characters in name:
-	for characters in name:
-		if characters == "i" or characters == "e" or characters == "i" or characters == "o" or characters == "u" :
-			count = count + 1
-		print(count)
+	if characters == "a": 
+		count = count + 1
+
+	if characters == "e" :
+		count = count + 1
+
+	if characters == "i" :
+		count = count + 1
+
+	if characters == "o" :
+		count = count + 1
+
+	if characters == "u" :
+		count = count + 1
+print(count)
