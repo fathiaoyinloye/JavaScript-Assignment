@@ -1,4 +1,4 @@
-for (let count = 100; count >= 1; count = count++){
+for (let count = 100; count >= 1; count= count -1){
 	
 	console.log(count)
 	
