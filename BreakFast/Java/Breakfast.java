@@ -1,5 +1,40 @@
 public class Breakfast{
 
+	public static int averageOfNumbersBetweenOneToTen(){
+		int sum = 0;
+		int average = 0;
+
+		for (int count = 1; count <=100; count++){
+			sum = sum + count;
+			average = sum/count	
+		}
+		return average;
+
+	}
+
+
+	public static int sumOfDivisors(number){
+		int sumDivisor = 0;
+		for (int count = 1; count <= number; count++){
+			if(number % count == 0)
+				sumDivisor = sumDivisor + count;	
+		}
+		return sumDivisor;
+
+	}
+
+	public static int countOfDivisors(number){
+		int countDivisor = 0;
+		for (int count = 1; count <= number; count++){
+			if(number % count == 0)
+				countDivisor = countDivisor + 1;	
+		}
+		return countDivisor;
+
+	}
+
+
+
 	public static String reverseLetter(String letters){
 		String output = "";
 		for (int count = 1; count < letters.length(); count++){
