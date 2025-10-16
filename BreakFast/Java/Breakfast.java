@@ -135,5 +135,75 @@ public class Breakfast{
 		return binaryNumber;
 	}
 
+	public static int decimalToBinary(int decimalNumber ){
+		int binary = 0;
+		int multiplier = 10;
+		for (int index = 1; decimalNumber > 0; index++){
+			int digit = decimalNumber % 2;
+			binary = binary * multiplier + digit;
+			if (index == 1)
+				binary = digit;
+		decimalNumber = decimalNumber/ 2;
+		}
+
+		return binaryNumber;
+	}
+
+
+	public static int countLowercase(String name ){
+		int count = 0;
+		for (int index = 0; index < name.length(); index++){
+			if (name.charAt(index) == Character.toLowerCase(name.charAt(index)))
+				count = count+1	;
+		}
+		return count;
+	}
+
+	public static int countUppercase(String name ){
+		int count = 0;
+		for (int index = 0; index < name.length(); index++){
+			if (name.charAt(index) == Character.toUpperCase(name.charAt(index)))
+				count = count+1	;
+		}
+		return count;
+	}
+
+
+
+
+	public static int firstVowelPosition(String characters){
+
+		int count = 1;
+		int position = 0;
+		for(int index = 0; index < characters.length(); index++){
+			if(characters.charAt(index) == 'a' || characters.charAt(index) == 'e' || characters.charAt(index) == 'i' || characters.charAt(index) == 'u' || characters.charAt(index) == '0'){
+			break;
+
+			}
+			position = index + 1;
+		}
+
+	return position
+
+
+	}
+
+
+	public static int powerOfaNumber(int base int exponent){
+
+		let result = 1;
+
+		for (let count = exponent; count >=1; count--){
+			result = result * base;
+		}
+		return result;
+
+
+	}
+
+
+
 }	
+
+
 
