@@ -37,7 +37,7 @@ public class Breakfast{
 
 	public static String reverseLetter(String letters){
 		String output = "";
-		for (int count = 1; count < letters.length(); count++){
+		for (int count = 0; count < letters.length(); count++){
 			output =  letters.charAt(count) + output;
 
 		}
@@ -110,7 +110,7 @@ public class Breakfast{
 	}
 
 
-	public static boolean isLetter(String letters){
+	public static boolean isLetterPalindrome(String letters){
 		String output = "";
 		for (int count = 1; count < letters.length(); count++){
 			output =  letters.charAt(count) + output;
@@ -123,9 +123,17 @@ public class Breakfast{
 	}
 
 
+	public static int binaryToDecimal(int binaryNumber ){
+		int decimal = 0;
+		for(int count = 1; binaryNumber > 0; count = count*2){
+	
+			int digit = binaryNumber %  10;
+			decimal = decimal +(digit * count);
+			binaryNumber = binaryNumber/10;
 
-
-
+		}
+		return binaryNumber;
+	}
 
 }	
 

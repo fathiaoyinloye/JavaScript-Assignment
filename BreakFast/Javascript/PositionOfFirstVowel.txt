@@ -1,0 +1,10 @@
+let characters = "Temitope"
+let positionOfFirstVowel
+for(let index = 0; index < characters.length; index++){
+	if(charAt(index) == "a" or "e" or "i" or "u"
+		positionOfFirstVowel = charAt(index);
+	break;	
+
+
+
+}
