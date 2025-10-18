@@ -58,7 +58,7 @@ for(int index = 0; index < characters.length(); index++){
 				System.out.println("The first vowel position is index "+ position); 
 
 }
-*/
+
 
 String characters = "dele";
 for (int count = 0; count < characters.length(); count++){ 
@@ -67,9 +67,28 @@ for (int count = 0; count < characters.length(); count++){
 }	
 
 
+}  */
+
+for(int count = 1; count <= 100;  count++){
+
+int sum = 0;
+		for(int count = 1; count <= number; count++){
+			if(number % count == 0) {
+			sum = sum + count;
+				
+			}
+ 		}
+
+		int prime = number + 1;		
+		if(prime == sum){
+			return true;
+		}
+		else{
+			return false;
+		}
+
+
 }
-
-
 
 
 }
