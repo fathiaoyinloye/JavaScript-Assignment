@@ -5,10 +5,10 @@ public class Fibonacci{
 	int lcm = 1;
 	
 		for (int divisor = 2; number >= 1; divisor++){
-			if(number % divisor == 0 ) {
-			lcm *= divisor;  
+			if(number % divisor == 0 ) 
+			lcm *= divisor; 
 			number = number/ divisor;
-			}
+			
 			
 		}
 
