@@ -29,7 +29,7 @@ def count_lowercase(name):
 	return sum
 
 
-def count_lowercase(name):
+def count_uppercase(name):
 	count = len(name) -1
 	sum = 0
 	for char in name:
