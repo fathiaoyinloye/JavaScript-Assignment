@@ -1,16 +1,22 @@
-
 public class GCD{
-	public static void main(String[] args){
-	
-		int numberOne = 10;
-		int numberTwo = 18;
-		for(int count = 1; count <= numberOne/2; count++){
-			if(number % count == 0)
-				array[count] = 			
 
- 		}
+	public static void main (String... args){
+	int numberOne = 12;
+	int numberTwo = 7;
+	int gcd = 0;
+	int minimum = numberOne;
+	if(numberTwo < minimum)
+		minimum = numberTwo;
 
-		
+
+	for(int count = minimum;  count >= 1; count--)
+		if( numberTwo % count == 0 && numberOne % count == 0 ){
+			gcd = count;
+			break;
+		}
+		System.out.print(gcd);
+
+
 	}
 
 
