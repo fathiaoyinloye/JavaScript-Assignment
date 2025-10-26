@@ -1,6 +1,8 @@
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.util.ArrayList;
+
 
 	public class GroceryManagerAppTest{
 
@@ -115,13 +117,15 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 	
 		groceryManager.addItems("Tomatoes");
 		
-		ArrayList <String> actual = groceryManager.showItems();
-		assertEquals(actual, 1);
+		ArrayList <String> result = groceryManager.showItems();
+		String actual = result.get(0);
+		String expected = "Tomatoes";
+		assertEquals(actual, expected);
 
 
 	}
 
-
+	
 	
 
 

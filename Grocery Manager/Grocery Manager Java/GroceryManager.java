@@ -35,9 +35,16 @@ public class GroceryManager{
 
 	}
 
-	public  ArrayList <String> showItems(){
+	public  void showItems(){
+			if (totalGrocerecies() == 0){
+				System.out.println("There is no item in the GroceryList");}
+			else{
 		
-		return totalGrocerecies;
+				for (int items = 0; items < totalGrocerecies.size(); items++ ){
+					System.out.println(totalGrocerecies.get(items));
+				}
+		}
+
 	}
 
 
