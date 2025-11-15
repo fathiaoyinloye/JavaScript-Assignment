@@ -1,7 +1,7 @@
-public class GCD{
+public class LCMNew{
 
 	public static void main (String... args){
-	int numberOne = 12;
+	int numberOne = 13;
 	int numberTwo = 4;
 	int gcd = 0;
 	int minimum = numberOne;
@@ -14,9 +14,10 @@ public class GCD{
 			gcd = count;
 			break;
 		}
-		System.out.print(gcd);
 
+		int lcm = (numberOne * numberTwo)/gcd;
 
+		System.out.print(lcm);
 	}
 
 
